@@ -2,11 +2,11 @@
 
 This project contains a demo Rails app that shows how to implement inbound email processing using [Postmark’s inbound webhooks](https://postmarkapp.com/why/inbound).
 
-You will need to have a [Postmark account](https://postmarkapp.com) to run this demo.
+You will need to have a [Postmark account](https://postmarkapp.com) to run this demo. If you don’t have one already, [sign up for a free account](https://account.postmarkapp.com/sign_up).
 
 ## Getting Started
 
-_This tutorial you have Ruby 2.4.1 installed. If not, please [install it using RVM](https://rvm.io)._
+_This tutorial assumes you have Ruby 2.4.1 installed. If not, please [install it using RVM](https://rvm.io)._
 
 1. Clone this repository to your local machine.
 
@@ -48,13 +48,25 @@ _You can find the inbound email address for a Postmark server on the server’s 
 
 7. Navigate to your Postmark server’s inbound settings page (Settings → Inbound) and set the Webhook field to match your Ultrahook endpoint. (See below for instructions on how to set up Ultrahook.)
 
-8. Start the Rails server.
+8. Start Ultrahook.
+
+```bash
+ultrahook inbound-demo 3000
+```
+
+9. Start the Rails server.
 
 ```bash
 rails s
 ```
 
-9. Navigate to <http://0.0.0.0:3000>
+10. Navigate to <http://0.0.0.0:3000/articles/1>
+
+11. Click the "Send a response" button at the bottom of the page to launch your email client.
+
+12. Compose a simple message and hit send.
+
+13. After a few seconds, refresh the page. You should see the content of your email appear in the _Responses_ section at the bottom of the page.
 
 
 ## Testing Inbound Webhooks Locally with Ultrahook
