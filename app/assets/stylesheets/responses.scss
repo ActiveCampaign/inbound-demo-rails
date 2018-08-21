@@ -1,0 +1,40 @@
+.responses {
+  margin-top: 2em;
+  padding: 1.5em;
+  border: 1px solid #EEE;
+  border-radius: 4px;
+
+  &_title {
+    display: inline-block;
+    margin: .25em 0 0;
+  }
+
+  &_new {
+    float: right;
+  }
+}
+
+.response {
+  padding: .5em 0;
+  border-top: 1px solid #EEE;
+
+  &:first-of-type {
+    margin-top: 1.5em;
+  }
+
+  &_title {
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1em;
+  }
+
+  &_body p:first-child {
+    margin-top: .5em;
+  }
+
+  &_date {
+    padding-bottom: 1em;
+    color: #999;
+    font-size: .875em;
+  }
+}

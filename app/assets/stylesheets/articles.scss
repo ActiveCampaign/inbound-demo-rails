@@ -1,16 +1,16 @@
-.response {
-  margin-bottom: 1.5em;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+.article {
+  padding: 1em 0;
+  border-bottom: 1px solid #EEE;
 
   &_title {
     margin-bottom: 0;
-    font-size: 1em;
+
+    a {
+      text-decoration: none;
+    }
   }
 
-  &_body p:first-child {
+  &_extract {
     margin-top: .5em;
   }
 }

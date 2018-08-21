@@ -3,21 +3,21 @@
 </nav>
 
 <article>
-  <h1><%= @article.title %></h1>
+  <h1 class="page_title page_title--article"><%= @article.title %></h1>
   <%= raw @article.body %>
 </article>
 
-<hr>
+<div class="responses">
+  <h2 class="responses_title"><%= pluralize @article.responses.count, 'Response' %></h2>
+  <%= mail_to @article.response_url, "Send a response", class: 'btn responses_new'  %>
 
-<h2><%= pluralize @article.responses.count, 'Response' %></h2>
-
-<% @article.responses.each do |response| %>
-<div class="response">
-  <h3 class="response_title"><%= mail_to response.email, response.name %> said:</h3>
-  <div class="response_body">
-    <%= simple_format response.body %>
+  <% @article.responses.each do |response| %>
+  <div class="response">
+    <h3 class="response_title"><%= mail_to response.email, response.name %> said:</h3>
+    <div class="response_body">
+      <%= simple_format response.body %>
+    </div>
+    <div class="response_date"><%= response.created_at.to_formatted_s(:long_ordinal) %></div>
   </div>
+  <% end %>
 </div>
-<% end %>
-
-<%= mail_to @article.response_url, "Send a response to this article", class: 'btn'  %>

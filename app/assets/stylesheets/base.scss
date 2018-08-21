@@ -1,8 +1,23 @@
+html {
+  background: #F7F7F7;
+}
+
 .page {
-  max-width: 640px;
+  background: #FFF;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em;
   line-height: 1.4;
+
+  &_title {
+    border-bottom: 3px solid #EEE;
+    margin-bottom: 0;
+
+    &--article {
+      margin-bottom: 1em;
+    }
+  }
 }
 
 hr {
