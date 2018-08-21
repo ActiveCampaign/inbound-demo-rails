@@ -6,3 +6,18 @@
   <h1><%= @article.title %></h1>
   <%= raw @article.body %>
 </article>
+
+<hr>
+
+<h2><%= pluralize @article.responses.count, 'Response' %></h2>
+
+<% @article.responses.each do |response| %>
+<div class="response">
+  <h3 class="response_title"><%= mail_to response.email, response.name %> said:</h3>
+  <div class="response_body">
+    <%= simple_format response.body %>
+  </div>
+</div>
+<% end %>
+
+<%= mail_to @article.response_url, "Send a response to this article", class: 'btn'  %>

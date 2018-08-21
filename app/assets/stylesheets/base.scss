@@ -4,3 +4,24 @@
   padding: 2em 1em;
   line-height: 1.4;
 }
+
+hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 1px solid #EEE;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #007DCC;
+  color: #FFF;
+  border-radius: 3px;
+  padding: .5em .8em;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: #006EB3;
+  }
+}

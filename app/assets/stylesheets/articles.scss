@@ -1,3 +1,16 @@
-// Place all the styles related to the Articles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.response {
+  margin-bottom: 1.5em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_title {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
+  &_body p:first-child {
+    margin-top: .5em;
+  }
+}
