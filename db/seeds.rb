@@ -1,7 +1,54 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Article.create([
+  {
+    title: 'Fewer meetings courtesy of automated check-ins',
+    body: '<p>With our <a href="https://wildbit.com/blog/2017/05/31/experimenting-with-a-4-day-work-week">switch to 4-day work weeks</a> (see also the <a href="https://wildbit.com/blog/2017/10/19/4-day-work-week-update">4-day work week update</a>) at Wildbit, we’ve made a point to be more deliberate about how we spend our time. While we’re trying to work fewer hours, we’re also trying to achieve the same productivity. With eight fewer hours each week, that means we have to be a little more conscious of things like unnecessary meetings or alternative ways to accomplish the same things in order to shorten meetings or even skip some entirely. One of the ways we’ve done that is by shifting more communication to text-based recurring check-ins, and it’s been a huge improvement in terms of efficiency.</p>
+    <p>With Postmark, the Front of House team includes both marketing and customer success. With the way we work, the two are closely integrated. However, with eight people and the split between marketing and success, while there’s plenty of overlap, it’s not 100%. As a result, plenty of meetings needed all of us together, but others only needed some of us. To help mitigate this, we shifted from weekly video meetings to frequent automated check-ins through Basecamp and Slack. </p>
+    <p>This has had a huge impact at reducing meetings while still keeping everybody informed. It’s not a perfect solution, but it’s been a healthy change overall. Especially as a remote team, it fits better with how we work and how we’d like to work.</p>
+    <h2>How does it work?</h2>
+    <p>We have two recurring check-ins that are set up through <a href="https://basecamp.com/features/checkins">Basecamp’s automated check-ins</a>. There’s one daily question for the marketing side of the team, and one weekly question at the end of the week for the full front of house team.</p>
+    <ol>
+    <li>Daily question for marketing team only: “What are the 1-3 most important things you want to finish today? (Don’t forget to @mention anyone you may need help from today.)”</li>
+    <li>Weekly question for the full Front of House team: “How’s your weekly goal looking? And what’s your no-matter-what for next week?”</li>
+    </ol>
+    <p>The daily question is limited to the marketing side because the success half of them spends the majority of their time on customer support. As a result, they don’t have as much to share on a daily basis beyond “helping customers.” On a weekly basis, though, everyone has updates to share.</p>
+    <p>For us, the “no-matter-what” is the important part of the second question. We’re all juggling a lot of random small tasks that are worth mentioning, but the “no-matter-what” helps us think about the things that we feel are important enough to really focus on and ensure they get across the finish line. It doesn’t always happen, but framing it that way helps us stay focused.</p>
+    <p>So, now that you see how it works, let’s see how the benefits play out.</p>
+    <h2>Enables asynchronous communication</h2>
+    <p>As a remote team spread across eight hours worth of time zones, the asynchronous nature of the text-based check-ins makes it easier than being forced into regular meetings during an ideal window when everyone is at their desk working. Instead of having one big meeting with everyone in every time zone, we’re able to have smaller more focused meetings where time zone overlap is less of an issue because fewer people are involved.</p>
+    <p>It’s also more convenient for team members to write their check-in at a time that works with the natural flow of their day. The same goes for reading the check-ins. Everyone can read everyone else’s news when it’s most convenient for them.</p>
+    <h2>Encourages deliberate and focused planning</h2>
+    <p>Checking in and sharing updates during a meeting with other people waiting is a bit of a hurried affair. When you write a text-based check-in, there’s no pressure, and it allows for a more calm and deliberate approach to reflecting on recent accomplishments and thinking about upcoming work and news to share.</p>
+    <h2>Provides historical context and reference</h2>
+    <p>With the text-based check-ins, we also gain the benefit of having historical context and insights. I frequently refer back to my own check-ins if I’m ever struggling to maintain focus or remember what’s most important. This is particularly helpful Monday mornings where I can refer back to the previous week’s check-in to refresh my memory about what I wanted to get done that week.</p>
+    <h2>Enables smaller, more flexible, and more focused meetings</h2>
+    <p>Even though marketing and success are closely related, our day-to-day focuses are different. While the meetings are great for some communication, there were often topics that didn’t apply equally to everyone in a full meeting of eight people. Instead of all eight people meeting by default once each week, we check-in on Slack near meeting time to see if there are any pressing topics. If nobody has anything, we skip it. Because of the text-based check-ins, when we do have meetings, they’re able to be shorter because everyone doesn’t have to go around and say what they’re working on. We all already know because we read the check-ins. That way, we can focus only on topics that need discussion. So when we do have full meetings, they’re more efficient than they’d be otherwise</p>
+    <h2>One drawback: Less seeing each other’s faces</h2>
+    <p>The one drawback that we’ve found is that, as a remote team, these meetings were our primary opportunity to see each other. So there’s definitely some drawbacks from a community and relationship building standpoint. We’ll have to figure something out here, but it’s just one of those tradeoffs. Community is important, but the gains here in terms of enabling more focus work and better meetings are too big to be ignored. We’re still working out how we do it, but maybe we’ll make sure we’re meeting at least once or twice a month just for kicks even if it’s only for 5 or 10 minutes.</p>'
+  },
+  {
+    title: 'Slow down',
+    body: '<p>Most mornings Natalie and I either walk to work, about two miles through the city, or we drive about 10 minutes. This morning was pretty normal. We left the house around 9am, dropped some things off at the office, and I drove to the parking garage. As I drove through the garage I couldn’t find a spot. I went in circles, back tracked, and finally found a spot after some frustration. Once I parked it felt like I was running late. I jumped out of the car, started walking fast toward the stair well, and made a good pace down the stairs. Then I stopped. </p>
+    <p><strong>What the hell was I rushing for?</strong></p>
+    <p>I didn’t have any meetings. No one was waiting for me to get to the office. I don’t have any strict deadlines today, or even this week. </p>
+    <p>I realized this and quickly regrouped. Instead of going straight into the office, I decided to slow down and head to a coffee shop. I forced myself to reduce the false urgency, opting for a relaxing start to my work day to plan ahead. </p>
+    <p>Every once in a while I will catch myself in this pattern - rushing for no reason. It could be during a commute, while working on a new feature idea for our products, or more likely when I sit in meetings (my limit is about 45 minutes). The reality is that, in most cases, it’s completely made up. After the commute, or after I finish a task, I have no need to “rush” to the next thing. Nothing is waiting, and no one is held up. </p>
+    <p>This morning was a good reminder of our 7th value:</p>
+    <blockquote class="entry_pull-quote">
+    <p“Most things are not urgent. Be patient, stay calm, go home.”</p>
+    </blockquote>
+    <p>As a result of this morning’s detour I ran into a friend at the coffee shop. He’s working on an awesome side project designing prints for race track maps called <a href="http://racekrafts.com">RaceKrafts</a>. Racing is a hobby of mine, so we had a good time catching up and talking about ways to promote it. If I rushed to work, I would have completely missed this.</p>'
+  },
+  {
+    title: 'Working on the next little thing',
+    body: '<p>When you first start a product, you have a small set of problems you want to solve for a specific audience, and you go all in. As a product gains customers and grows, you have to focus on what’s next. How are customers using the product? Where can we make the product even more valuable? Where can we remove more pain? Or, wouldn’t it be great if… </p>
+    <p>I think this is where product owners get into trouble. We always tend to think about the next <em>big</em> thing. How are we going to blow our customers away and separate ourselves from our competition? It has to be something amazing. Something press worthy. </p>
+    <p>But you <em>also</em> need to constantly refine your product in the places that you have not looked at for years. Because while you may have not looked at it in years, your customers are looking at it every day, and possibly experiencing pain in the process. Eventually you look back at your product and realize that while you launched some great new features, it’s starting to feel rough. It’s being neglected. </p>
+    <p>We work hard to make sure this never happens in <a href="https://postmarkapp.com">Postmark</a>. While we collect support requests, talk to customers, and review old features, it can be difficult to identify where customers feel pain in the product. So on Tuesday we asked a very focused question:</p>
+    <blockquote class="entry_pull-quote">
+    <p><em>What annoys you about Postmark?</em></p>
+    </blockquote>
+    <p>The response has been incredible. This was a one-question survey. It didn’t ask about on boarding, or target a certain group of users. Instead, we asked a single leading question knowing that we must have those little annoying parts that wear people out every time they use our product. </p>
+    <p>The responses that came back brought a huge smile to our faces. It wasn’t the quantity of responses, it was the granularity of the response. While some of the things are known, we uncovered a list of small but valuable changes we can make to improve the daily experience for customers. And while they seem like little annoyances, they are actually giant inconveniences. Things like organizing the servers page, or searching sender domains. Solving each one can have just as much impact as the next big thing, and we plan to do just that.</p>
+    <p>We have to realize customers purchased our products for the features and experience that existed when they signed up. Yes, we have to focus on opening up the audience, but we can’t forget to constantly improve the original ideas and experiences. Most of us created our product out of frustration from another bad experience. We have to work hard to make sure our own products are never the source of that frustration.</p>'
+  }
+])
